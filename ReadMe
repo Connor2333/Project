@@ -1,2 +1,3 @@
-This repository is about the project.
-checkers
+This repository is about the group 29 project.
+current design is the checkers. this file is named Checkers.java
+For demo 1, it is text based version with multiple(2) players and opearating by changing of coordinate.
