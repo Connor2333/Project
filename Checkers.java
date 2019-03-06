@@ -1,7 +1,55 @@
-
 /*
-A lot of this initial code comes from 
-http://www.cs.ucf.edu/~dmarino/ucf/java/Checkers.java
+	
+	From Presentation:
+	
+		Readme file : Include rules and instructions on how to play the game. Please, submit the readme file in d2l.
+			Done
+			
+		Code base:  Fix the errors in the console based version of your project. Code needs to be documented (javadoc). 
+			Not Done
+			
+		Class Diagram: Include all the classes and relationships that you are going to use for the next demo.
+			Not Done
+				
+		OO design : Your code must have to be Object Oriented for the next demo.
+			Not done
+			
+	To Do before 5pm, March 13:
+	
+		Implement GUI board board and checkers that can be interacted with
+			Not Done
+		
+		For the console based version, if wrong coordinates are entered, display the board again. (Just in case GUI 
+		doesn't function as intended, but not a priority)
+			Not Done
+	
+		Split into multiple classes to make it more object oriented
+		(use this site for simple explanation of concept, it helped me out: 
+		https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260)
+			Not Yet Done
+		
+		Finish implementing all checkers rules
+			- Once a checker reaches the opposite side of board, it may move forwards or backwards
+			  currently all checkers can only move forward
+				Not Done
+			
+			- Update code to stop the game if one team has no more valid moves
+				Not Done
+				
+			- Don't allow the user to select a blank space
+				Not Done
+			
+			
+		Cite all sources
+			Done
+		
+	
+
+*/
+
+/**
+* A lot of this initial code comes from 
+* http://www.cs.ucf.edu/~dmarino/ucf/java/Checkers.java
 */
 import java.io.*;
 import java.util.*;
