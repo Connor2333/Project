@@ -1,3 +1,8 @@
 This repository is about the group 29 project.
-current design is the checkers. this file is named Checkers.java
-For demo 1, it is text based version with multiple(2) players and opearating by changing of coordinate.
+This is currently a text-based version of checkers designed as a two player game with plans to incorporate AI with various
+  difficulties and playable in a GUI.
+ The rules of the game are the standard checkers rules, with red team starting and the checkers only being able to move diagonally.
+In order to capture an opposing checker, an open space must be available behind that checker. This continues until all checkers on
+  one side are captured, or until one team has no more valid moves( which results in a loss for that team)
+In order to currently play, one must select a checker using its x and y coordinates, and moving it to a valid position using the
+  same coordinate system.
