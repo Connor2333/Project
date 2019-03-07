@@ -16,19 +16,19 @@
 			
 	To Do before 5pm, March 13:
 	
-		Implement GUI board board and checkers that can be interacted with
+		Implement GUI board board and checkers that can be interacted with -    Mischa
 			Not Done
 		
 		For the console based version, if wrong coordinates are entered, display the board again. (Just in case GUI 
-		doesn't function as intended, but not a priority)
+		doesn't function as intended, but not a priority)  
 			Not Done
 	
-		Split into multiple classes to make it more object oriented
+		Split into multiple classes to make it more object oriented  --Folahan
 		(use this site for simple explanation of concept, it helped me out: 
 		https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260)
 			Not Yet Done
 		
-		Finish implementing all checkers rules
+		Finish implementing all checkers rules         --Connor
 			- Once a checker reaches the opposite side of board, it may move forwards or backwards
 			  currently all checkers can only move forward
 				Not Done
