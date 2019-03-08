@@ -29,15 +29,34 @@
 			Not Yet Done
 		
 		Finish implementing all checkers rules         --Connor
+		
 			- Once a checker reaches the opposite side of board, it may move forwards or backwards
 			  currently all checkers can only move forward
 				Not Done
+				//3.7 21:48 update
+					I guess I found the soloution for reversing a checker. but it is uncertain if it is work or not
+					Alogrithm: once a checker can update to "king", the y-coordinate should be 8(for black) 
+						   or 1(for red). When a checker reach the end, the variable "detKing" will 
+						   equal true and this checker can move in reverse.
+					problem: I am trying to convert current code to Object-orinated type because normal checkers 
+						 and "king" checkers can exist at same time.Diffierent checkers have diffierent 
+						 properties.
+					the code below the comments is not updated. I need some implements on the code.
 			
 			- Update code to stop the game if one team has no more valid moves
 				Not Done
+				//3.7 21:48 update 
+					For this problem, I cannot find the soloution of this. but I think if we solve the problem above
+					(checkers move backward), the situation of no valid moves will not exist. Just a guess.  cannot 
+					imagine the no valid move situation. 
+					In alternate way, how about add button to stop or restart or concede the game?  
 				
 			- Don't allow the user to select a blank space
 				Not Done
+				//3.7 21:48 update 
+					If we regard the checkers as a button,this problem will be solved because there is no actions 
+					once mouse click on the background.
+					
 			
 			
 		Cite all sources
