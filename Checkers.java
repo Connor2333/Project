@@ -80,7 +80,7 @@ public class Checkers {
     private int redcheckers; // Number of red checkers on the board
     private int blackcheckers; // Number of black checkers on the board
     private char whosemove; // Either 'r' or 'b', for who's move it currently is.
-
+    private boolean detKing;//(3.12)determine if the checker can upgrade(can go back)
     // Constructs default Checkers object, initializing board to starting
     // playing position.
     public Checkers() {
@@ -180,28 +180,55 @@ public class Checkers {
 	// Check to see you are moving your piece to a blank square.
 	else if (board[xfrom][yfrom]==whosemove && board[xto][yto]=='_') {
 
-	    // Checks case of simple move
+	   // Checks case of simple move
 	    if (Math.abs(xfrom-xto)==1) {
-		if ((whosemove == 'r') && (yto - yfrom == 1))
-		    return true;
-		else if ((whosemove == 'b') && (yto - yfrom == -1))
-		    return true;
+	    	if ((whosemove == 'r') && (yto - yfrom == 1))
+	    		return true;
+	    	else if ((whosemove == 'b') && (yto - yfrom == -1))
+	    		return true;
+	    	//(3.12)king reverse moving
+	    	else if ((whosemove == 'r') && (yto - yfrom == -1)&&(detKing==true))
+	    		return true;
+	    	else if ((whosemove == 'b') && (yto - yfrom == 1)&&(detKing==true))
+	    		return true;
 	    }
 	    
 	    // Checks case of a jump
 	    else if (Math.abs(xfrom-xto)==2) {
-		if (whosemove == 'r' && (yto - yfrom == 2) && 
-		    board[(xfrom+xto)/2][(yfrom+yto)/2] == 'b')
-		    return true;
-		else if (whosemove == 'b' && (yto - yfrom == -2) && 
-		    board[(xfrom+xto)/2][(yfrom+yto)/2] == 'r')
-		    return true;
+	    	if (whosemove == 'r' && (yto - yfrom == 2) && 
+	    		board[(xfrom+xto)/2][(yfrom+yto)/2] == 'b')
+	    		return true;
+	    	else if (whosemove == 'b' && (yto - yfrom == -2) && 
+	    		board[(xfrom+xto)/2][(yfrom+yto)/2] == 'r')
+	    		return true;
+	    	//(3.12)king reverse jump
+	    	else if (whosemove == 'r' && (yto - yfrom == -2) && 
+		    	board[(xfrom+xto)/2][(yfrom+yto)/2] == 'b'&&(detKing==true))
+		    	return true;
+	    	else if (whosemove == 'b' && (yto - yfrom == 2) && 
+		    	board[(xfrom+xto)/2][(yfrom+yto)/2] == 'r'&&(detKing==true))
+		    	return true;
 	    }
 	}
 	// If move is neither a simple one or a jump, it is not legal.
 	return false;
     }
-
+    //determine a checker is king or not
+    /*once a checker reach the end, return true
+     * black checkers : when y=1 , reach end 
+     * red checkers: when y=8, reach end
+     * once a checker reach end, upgraded to king
+     (3.12)This part should be implemented today or tomorrow.
+     we can discuss about the seperated classes to make sure every part work functionally.
+     */
+    public boolean detKing(int moveto) {
+    	int yto = moveto%10 - 1;
+    	if ((whosemove=='b'&&yto==1)||(whosemove=='r'&&yto==8))
+    		return true;
+    	else 
+    		return false;
+    	
+    }
     // Executes a move.
     public void executeMove(int movefrom, int moveto) {
 	// Gets array indeces corresponding to the move, from parameters.
