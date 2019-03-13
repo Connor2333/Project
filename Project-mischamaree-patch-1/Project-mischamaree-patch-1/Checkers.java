@@ -180,24 +180,35 @@ public class Checkers {
 	// Check to see you are moving your piece to a blank square.
 	else if (board[xfrom][yfrom]==whosemove && board[xto][yto]=='_') {
 
-	    // Checks case of simple move
+	// Checks case of simple move
 	    if (Math.abs(xfrom-xto)==1) {
-		if ((whosemove == 'r') && (yto - yfrom == 1))
-		    return true;
-		else if ((whosemove == 'b') && (yto - yfrom == -1))
-		    return true;
+	    	if ((whosemove == 'r') && (yto - yfrom == 1))
+	    		return true;
+	    	else if ((whosemove == 'b') && (yto - yfrom == -1))
+	    		return true;
+	    	//(king reverse moving)
+	    	else if ((whosemove == 'r') && (yto - yfrom == -1)&&(detKing==true))
+	    		return true;
+	    	else if ((whosemove == 'b') && (yto - yfrom == 1)&&(detKing==true))
+	    		return true;
 	    }
 	    
 	    // Checks case of a jump
 	    else if (Math.abs(xfrom-xto)==2) {
-		if (whosemove == 'r' && (yto - yfrom == 2) && 
-		    board[(xfrom+xto)/2][(yfrom+yto)/2] == 'b')
-		    return true;
-		else if (whosemove == 'b' && (yto - yfrom == -2) && 
-		    board[(xfrom+xto)/2][(yfrom+yto)/2] == 'r')
-		    return true;
-	    }
-	}
+	    	if (whosemove == 'r' && (yto - yfrom == 2) && 
+	    		board[(xfrom+xto)/2][(yfrom+yto)/2] == 'b')
+	    		return true;
+	    	else if (whosemove == 'b' && (yto - yfrom == -2) && 
+	    		board[(xfrom+xto)/2][(yfrom+yto)/2] == 'r')
+	    		return true;
+	    	//king reverse jump
+	    	else if (whosemove == 'r' && (yto - yfrom == -2) && 
+		    	board[(xfrom+xto)/2][(yfrom+yto)/2] == 'b'&&(detKing==true))
+		    	return true;
+	    	else if (whosemove == 'b' && (yto - yfrom == 2) && 
+		    	board[(xfrom+xto)/2][(yfrom+yto)/2] == 'r'&&(detKing==true))
+		    	return true;
+	    	
 	// If move is neither a simple one or a jump, it is not legal.
 	return false;
     }
