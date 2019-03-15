@@ -1,8 +1,6 @@
-This repository is about the group 29 project.
-This is currently a text-based version of checkers designed as a two player game with plans to incorporate AI with various
-  difficulties and playable in a GUI.
- The rules of the game are the standard checkers rules, with red team starting and the checkers only being able to move diagonally.
-In order to capture an opposing checker, an open space must be available behind that checker. This continues until all checkers on
-  one side are captured, or until one team has no more valid moves( which results in a loss for that team)
-In order to currently play, one must select a checker using its x and y coordinates, and moving it to a valid position using the
-  same coordinate system.
+This is the repository for the group 29 project.
+This version of our checkers project does not currently implement the rules of checkers, any checker is able to move to any square
+  and there is order which the teams have to move. Any team can move at any time, and when a checker does get captured it has to be
+  removed from the board by hand.
+Checkers are moved by clicking on it and then clicking on the square that you want to move it to.
+We hope to implement the rules in the next two weeks, and therby implement an AI as well.
