@@ -4,3 +4,6 @@ This version of our checkers project does not currently implement the rules of c
   removed from the board by hand.
 Checkers are moved by clicking on it and then clicking on the square that you want to move it to.
 We hope to implement the rules in the next two weeks, and therby implement an AI as well.
+
+To run it: javac CheckersGame.java
+           java CheckersGame
