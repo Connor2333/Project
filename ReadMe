@@ -7,3 +7,18 @@ We hope to implement the rules in the next two weeks, and therby implement an AI
 
 To run it: javac CheckersGame.java
            java CheckersGame
+
+
+Demo 3 task:
+
+  1.GUI version and textbanse Version must have same logic
+  
+  2.GUI funciationally work
+  
+  3.Javadocs
+  
+  4.Use inheritance
+  
+  5.provide Junit test
+  
+  6.submit your updated project proposal and updated team contract 
