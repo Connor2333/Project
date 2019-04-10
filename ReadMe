@@ -22,3 +22,12 @@ Demo 3 task:
   5.provide Junit test
   
   6.submit your updated project proposal and updated team contract 
+
+-----------4.10----------
+This is the repository for the group 29 project.
+Our project is about making a checkers board game.
+This version of checkers can play between two players;also, pieces move diagonally with great user friendly level. 
+To run the checker. javac CheckersApp.java 
+                     java CheckersApp
+Although this version is looks great , it still have some bugs on this version of checker. Current version have to reset game manully and 
+pieces cannot upgraded to king.These bugs would be fixed in someday.
