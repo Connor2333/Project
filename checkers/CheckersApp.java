@@ -8,7 +8,8 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 /**
  * This is the main checker application
- * @author Group 29
+ *Citation: https://github.com/AlmasB/FXTutorials/tree/master/src/com/almasb/checkers
+ *@author Group 29
  *
  */
 public class CheckersApp extends Application {
