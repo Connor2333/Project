@@ -8,6 +8,7 @@ import javafx.scene.shape.Ellipse;
 
 /**
  * This is the class about the properties of single checker
+ *https://github.com/AlmasB/FXTutorials/tree/master/src/com/almasb/checkers
  * @author Group29 
  */
 public class Piece extends StackPane {
