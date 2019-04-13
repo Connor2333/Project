@@ -1,33 +1,8 @@
-This is the repository for the group 29 project.
-This version of our checkers project does not currently implement the rules of checkers, any checker is able to move to any square
-  and there is order which the teams have to move. Any team can move at any time, and when a checker does get captured it has to be
-  removed from the board by hand.
-Checkers are moved by clicking on it and then clicking on the square that you want to move it to.
-We hope to implement the rules in the next two weeks, and therby implement an AI as well.
+Read Me
 
-To run it: javac CheckersGame.java
-           java CheckersGame
-
-
-Demo 3 task:
-
-  1.GUI version and textbanse Version must have same logic
-  
-  2.GUI funciationally work
-  
-  3.Javadocs
-  
-  4.Use inheritance
-  
-  5.provide Junit test
-  
-  6.submit your updated project proposal and updated team contract 
-
------------4.10----------
-This is the repository for the group 29 project.
-Our project is about making a checkers board game.
-This version of checkers can play between two players;also, pieces move diagonally with great user friendly level. 
-To run the checker. javac CheckersApp.java 
-                     java CheckersApp
-Although this version is looks great , it still have some bugs on this version of checker. Current version have to reset game manully and 
-pieces cannot upgraded to king.These bugs would be fixed in someday.
+•	This is the repository for the group 29 project.
+•	Our project is about making a checkers board game.
+•	This version of checkers can play between two players;also, pieces move diagonally with great user friendly level.
+•	To run the text base version, run Checkerstext.java
+•	To run the GUI, run CheckerApp.java
+•	All classes are in a Checkers package, with out the package nothing will run.
