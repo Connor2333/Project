@@ -2,6 +2,7 @@ package checkers;
 
 /**
  * This class is determining the moving result
+ *Citation: https://github.com/AlmasB/FXTutorials/tree/master/src/com/almasb/checkers
  * @author Group 29
  */
 public class MoveResult {
