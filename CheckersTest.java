@@ -26,7 +26,7 @@ public class CheckersTest {
                 "7 b _ b _ b _ b _ \n" +
                 "8 _ b _ b _ b _ b \n" +
                 "y\n" ;
-        
+
 
     }
 
@@ -34,6 +34,8 @@ public class CheckersTest {
     @Test
     public void testBoard_2(){
         Checkers game = new Checkers();
+        game.executeMove(13,24);
+        assertEquals('r',game.getTile(x,y));
 
     }
 
