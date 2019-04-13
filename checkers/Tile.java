@@ -5,6 +5,7 @@ import javafx.scene.shape.Rectangle;
 
 /**
  * This class is painting the board
+ *Citation:  https://github.com/AlmasB/FXTutorials/tree/master/src/com/almasb/checkers
  * @author Group 29
  */
 public class Tile extends Rectangle {
