@@ -2,7 +2,7 @@ package checkers;
 
 /**
  * This Enumeration is determine the pieces type
-* https://github.com/AlmasB/FXTutorials/tree/master/src/com/almasb/checkers
+* Citation:   https://github.com/AlmasB/FXTutorials/tree/master/src/com/almasb/checkers
  * @author Group 29
  */
 public enum PieceType {
